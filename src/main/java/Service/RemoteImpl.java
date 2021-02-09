@@ -15,15 +15,14 @@ public class RemoteImpl extends UnicastRemoteObject implements RemoteInterface {
 
     @Override
     public double average(int a, int b) throws RemoteException {
-
-        //double quo = add(a, b) / 2;
-        //double mod = add(a, b) % 2;
         return divided(a, b) / 2;
     }
 
     @Override
-    public float divided(int a, int b) throws RemoteException {
-        return a / b;
+    public double divided(int a, int b) throws RemoteException {
+        double quo = add(a, b) / 2;
+        double mod = add(a, b) % 2;
+        return quo + mod;
     }
 
     @Override

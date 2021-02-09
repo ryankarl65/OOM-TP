@@ -8,7 +8,7 @@ public interface RemoteInterface extends Remote {
 
     double average(int a, int b) throws RemoteException;
 
-    float divided(int a, int b) throws RemoteException;
+    double divided(int a, int b) throws RemoteException;
 
     double multiplied(int a, int b) throws RemoteException;
 
